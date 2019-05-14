@@ -3,13 +3,13 @@
     {
       "id": "8526044221",
       "subjectNo": "0934213432",
-      "subjectLevel": "1",
+      "subjectLevel": "1级科目",
       "isCheck":  "是"
     },
     {
       "id": "1496462884",
       "subjectNo": "0934212332",
-      "subjectLevel": "2",
+      "subjectLevel": "2级科目",
       "isCheck": "是"
 
     },
@@ -22,13 +22,13 @@
     {
       "id": "5540822563",
       "subjectNo": "09342122432",
-      "subjectLevel": "1",
+      "subjectLevel": "3级科目",
       "isCheck": "是"
     },
     {
       "id": "6318949236",
       "subjectNo": "093421q22432",
-      "subjectLevel": "2",
+      "subjectLevel": "2级科目",
       "isCheck": "否"
     }
   ]

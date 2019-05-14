@@ -1,0 +1,198 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-title-block">
+                        <h3>科目属性参数列表</h3>
+                    </div>
+                    <section class="example">
+                        <div class="table-flip-scroll">
+                            <div class="row ml5">
+                                <div class="col-md-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="subjectNo" id="subjectNoQuery" placeholder="请输入科目号" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="subjectName" id="subjectNameQuery" placeholder="请输入科目名称" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div> <div class="col-md-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="subjectStatus" id="subjectStatusQuery" placeholder="请输入科目状态" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" id="queryBtn" class="btn btn-info-outline">查询</button>
+                                </div>
+                            </div>
+                            <div class="jq-grid-box">
+                                <table id="jqGridSubject"></table>
+                                <div id="jqGridSubjectPager"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--弹框 start-->
+<div id="addSubjectBox" title="科目属性参数"  style="display:none">
+    <form class="m15" id="addSubjectForm">
+        <div class="row row-sm stats-container">
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">科目号:</label>
+                <input name="subjectNo" class="form-control col-10 boxed"readonly="readonly" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">科目英文名:</label>
+                <input name="engNm"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目中文名:</label>
+                <input name="chineseName" type="text" class="form-control col-10 boxed" disabled="disabled">
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" id="httpSelectDiv">
+                <label class="control-label">科目类别:</label>
+                <select name="subjectType" class="form-control col-10 boxed" disabled="disabled">
+                    <option value="资产类">资产类</option>
+                    <option value="负债类">负债类</option>
+                    <option value="负债共同类类">负债共同类类</option>
+                    <option value="所有者权益类">所有者权益类</option>
+                    <option value="收入类">收入类</option>
+                    <option value="支出类">支出类</option>
+                    <option value="表外类">表外类</option>
+                    <option value="表外类">表外类</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目分类:</label>
+                <select name="accountType" class="form-control col-10 boxed" disabled="disabled">
+                    <option value="标准账户">标准账户</option>
+                    <option value="支援账户">支援账户</option>
+                    <option value="控制账户">控制账户</option>
+                    <option value="同业控制账户">同业控制账户</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">分户维护标志:</label>
+                <select name="accountFlag" class="form-control col-10 boxed"disabled="disabled">
+                <option value="允许建立分户">允许建立分户</option>
+                <option value="不允许建立分户">不允许建立分户</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" >
+                <label class="control-label">科目层次:</label>
+                <select name="subjectLevel"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="1级科目">1级科目</option>
+                    <option value="2级科目">2级科目</option>
+                    <option value="3级科目">3级科目</option>
+                </select>
+            </div>
+
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">余额红字标志:</label>
+                <select name="redBalanceFlg" type="text" class="form-control col-10 boxed" disabled="disabled">
+                    <option value="允许">允许</option>
+                    <option value="不允许">不允许</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上级科目:</label>
+                <input name="parentSubject" type="text" class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">段值:</label>
+                <select name="segmentValue" type="text" class="form-control col-10 boxed" disabled="disabled">
+                    <option value="子目段">子目段</option>
+                    <option value="产品段">产品段</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目记账方式:</label>
+                <select name="bookkeepingMethod" type="text" class="form-control col-10 boxed" disabled="disabled">
+                    <option value="复式记账">复式记账</option>
+                    <option value="单式记账">单式记账</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">自动生成总账标识:</label>
+                <select name="autogenerategeneralLedgerFlg"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="可自动生成">可自动生成</option>
+                    <option value="不可自动生成">不可自动生成</option>
+                    <option value="可自动新开其他货币">可自动新开其他货币</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">明细科目标志:</label>
+                <select name="detailedSubjectFlg"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="明细科目">明细科目</option>
+                    <option value="非明细科目">非明细科目</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">外汇重估标志:</label>
+                <select name="foreignExchangeRevaluation"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="外汇重估处理">外汇重估处理</option>
+                    <option value="无需外汇重估处理">无需外汇重估处理</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">主账目号:</label>
+                <input name="mainAccountNo"  class="form-control col-10 boxed " readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目余额零标志:</label>
+                <select name="balanceSeroMark"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="日终为零">日终为零</option>
+                    <option value="月终为零">月终为零</option>
+                    <option value="年终为零">年终为零</option>
+                    <option value="无需检查为零">无需检查为零</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">余额方向:</label>
+                <select name="balanceDirection"  class="form-control col-10 boxed"disabled="disabled">
+                    <option value="借方">借方</option>
+                    <option value="贷方">贷方</option>
+                    <option value="借贷双方">借贷双方</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目状态:</label>
+                <select name="subjectStatus"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="有效">有效</option>
+                    <option value="待生效">待生效</option>
+                    <option value="注销">注销</option>
+                    <option value="冻结">冻结</option>
+                    <option value="停止使用">停止使用</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">手工记账标识:</label>
+                <select name="manualAccounting"  class="form-control col-10 boxed" disabled="disabled">
+                    <option value="允许">允许</option>
+                    <option value="不允许">不允许</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">时间:</label>
+                <input name="time"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+        </div>
+    </form>
+
+
+</div>
