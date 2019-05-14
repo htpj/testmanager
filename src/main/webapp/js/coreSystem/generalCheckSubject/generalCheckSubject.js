@@ -8,12 +8,7 @@ $(document).ready(function () {
     var colModel = [
         {name: 'subjectNo', index: 'subjectNo', width: 90},
         {name: 'subjectLevel', index: 'subjectLevel', width: 100},
-        {name: 'isCheck', index: 'isCheck', width: 100 , formatter(value){
-            if(value){
-                value = value == '0' ? "是" : "否";
-            }
-            return value ? value : "";
-            }},
+        {name: 'isCheck', index: 'isCheck', width: 100},
         {name: 'Modify', index: 'Modify', width: 100},
         {name: 'id', key: true, hidden: true}
     ];
