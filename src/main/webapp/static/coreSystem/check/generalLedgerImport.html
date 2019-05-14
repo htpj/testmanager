@@ -1,0 +1,258 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-title-block">
+                        <h3>总账数据查询列表</h3>
+                    </div>
+                    <section class="example">
+                        <div class="table-flip-scroll">
+                            <div class="row ml5">
+                                <div class="col-md-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="subjectNo" id="subjectNoQuery" placeholder="请输入科目号" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="institutionNo" id="subjectNameQuery" placeholder="请输入核算机构号" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="currency" id="subjectStatusQuery" placeholder="请输入币种" class="form-control underlined" value="">
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                                <div class="row ml5">
+                                    <div class="col-md-3">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <input type="text" name="startMon" placeholder="请输入起始金额" class="form-control underlined" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <input type="text" name="endMon" placeholder="请输入结束金额" class="form-control underlined" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <input type="text" name="date"  placeholder="请输入日期" class="form-control underlined" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                <div class="col-md-3">
+                                    <button type="button" id="queryBtn" class="btn btn-info-outline">查询</button>
+                                </div>
+                            </div>
+                            <div class="jq-grid-box">
+                                <table id="jqGridSubject"></table>
+                                <div id="jqGridSubjectPager"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--弹框 start-->
+<div id="addSubjectBox" title="总账数据"  style="display:none">
+    <form class="m15" id="addSubjectForm">
+        <div class="row row-sm stats-container">
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">会计日:</label>
+                <input name="accountDay" class="form-control col-10 boxed"readonly="readonly" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">核算机构号:</label>
+                <input name="institutionNo"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目号:</label>
+                <input name="subject" type="text" class="form-control col-10 boxed" disabled="disabled">
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" id="httpSelectDiv">
+                <label class="control-label">货币:</label>
+                <input name="curency" class="form-control col-10 boxed" disabled="disabled" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上日借方余额:</label>
+                <input name="yesterday" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上日贷方余额:</label>
+                <input name="yesterday1" class="form-control col-10 boxed"disabled="disabled"/>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" >
+                <label class="control-label">今日借方余额:</label>
+                <input name="today"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">今日贷方余额:</label>
+                <input name="today1" type="text" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当日合计借方发生额:</label>
+                <input name="totalmon" type="text" class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当日合计贷方发生额:</label>
+                <input name="totalmon1" type="text" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当日合计借方交易笔数:</label>
+                <input name="totalnum" type="text" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当日合计贷方交易笔数:</label>
+                <input name="totalnum1"  class="form-control col-10 boxed" disabled="disabled" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上旬借方余额:</label>
+                <input name="lastMon"  class="form-control col-10 boxed" disabled="disabled" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上旬贷方余额:</label>
+                <select name="lastMon1"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当旬合计借方发生额:</label>
+                <input name="nowMon"  class="form-control col-10 boxed " readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当旬合计贷方发生额:</label>
+                <input name="nowMon1"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当旬合计借方交易笔数:</label>
+                <input name="nownum"  class="form-control col-10 boxed"disabled="disabled"/>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当旬合计贷方交易笔数:</label>
+                <input name="nownum1"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上月借方余额:</label>
+                <input name="lastMonMon"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上月贷方余额:</label>
+                <input name="lastMonMon1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当月合计借方发生额:</label>
+                <input name="monMon"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当月合计贷方发生额:</label>
+                <input name="monMon1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当月合计借方交易笔数:</label>
+                <input name="monnum"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div><div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当月合计贷方交易笔数:</label>
+                <input name="monnum1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上季借方余额:</label>
+                <input name="lastMon22"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div><div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上季贷方余额:</label>
+                <input name="lastMon23"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div><div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当季合计借方交易笔数:</label>
+                <input name="lastMonMon11"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div><div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当季合计贷方交易笔数:</label>
+                <input name="lastMonMon12"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当季合计借方交易笔数:</label>
+                <input name="lastnum22"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当季合计贷方交易笔数:</label>
+                <input name="lastnum23"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上半年借方余额:</label>
+                <input name="lastyearMon"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上半年贷方余额:</label>
+                <input name="lastyearMon1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">本半年合计借方发生额:</label>
+                <input name="yearmon"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">本半年合计贷方发生额:</label>
+                <input name="yearmon1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div> <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">本半年合计借方交易笔数:</label>
+                <input name="yearnum"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">本半年合计贷方交易笔数:</label>
+                <input name="yearnum1"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上年借方余额:</label>
+                <input name="lastyearMon2"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">上年贷方余额:</label>
+                <input name="lastyearMon21"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当年合计借方发生额:</label>
+                <input name="yearmon2"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当年合计贷方发生额:</label>
+                <input name="yearmon21"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当年合计借方交易笔数:</label>
+                 <input name="yearnum2"  class="form-control col-10 boxed" readonly="readonly"/>
+             </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">当年合计贷方交易笔数:</label>
+                <input name="yearnum21"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">最后更新人员:</label>
+                <input name="user"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">最后更新日期:</label>
+                <input name="updTm"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div><div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">时间:</label>
+                <input name="time"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+        </div>
+    </form>
+
+
+</div>
