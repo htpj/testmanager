@@ -75,7 +75,7 @@ $(document).ready(function () {
             }else{
                 $.alertBox("上传文件类型错误,只能上传.txt,.xlsx或者.xls的文件！");
             }
-            data.submit();
+           // data.submit();
 
         },
         done: function (e, data) {
