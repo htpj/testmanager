@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+        <meta charset="utf-8">
+    </head>
+	<body>
+		<section class="section">
+		    <div class="row">
+		        <div class="col-md-12">
+		            <div class="card">
+		                <div class="card-block">
+		                    <div class="card-title-block">
+		                        <h3>用户管理</h3>
+		                    </div>
+		                    <section class="example">
+		                        <div class="table-flip-scroll">
+		                            <div class="row ml5">
+		                            	<div class="col-md-3">
+	                                    	<form role="form">
+		                                        <div class="form-group">
+		                                            <input type="text" name="Name" id="nameQuery" placeholder="请输入姓名" class="form-control underlined" value="">
+		                                        </div>
+	                                    	</form>
+	                                    </div>
+	                                    <div class="col-md-3">
+	                                    	<form role="form">
+		                                        <div class="form-group">
+		                                            <input type="text" name="UserName" id="userNameQuery" placeholder="请输入用户名" class="form-control underlined" value="">
+		                                        </div>
+	                                    	</form>
+	                                    </div>
+	                                    <div class="col-md-2">
+	                                    	<button type="button" id="queryUserBtn" class="btn btn-info-outline">查询</button>
+	                                    	<button type="button" id="addUserBtn" class="btn btn-info-outline">添加</button>
+	                                	</div>
+	                                </div>
+		                            <div class="jq-grid-box">
+			                            <table id="jqGridUser"></table>
+			                            <div id="jqGridPagerUser"></div> 
+			                        </div>
+		                        </div>
+		                    </section>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<!--弹框-->
+		<div id="addUserBox" title="用户管理" class="displaynone">
+			<form class="m15">
+		        <div class="row row-sm stats-container">
+		            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+		                <label class="control-label">姓名:</label>
+		                <input name="name" type="text" class="form-control col-10 boxed"  placeholder="请输入姓名">
+		            </div>
+		            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+		                <label class="control-label">职称:</label>
+		                <input name="title" type="text" class="form-control col-10 boxed"  placeholder="请输入职称">
+		            </div>
+		            <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
+		                <label class="control-label">角色:</label>
+		                <select name="role"  type="text" class="form-control col-8 boxed" >
+		                </select>
+		            </div>
+		            <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
+		                <label class="control-label">地址:</label>
+		                <input name="location" type="text" class="form-control col-10 boxed"  placeholder="请输入地址">
+		            </div>
+		            <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
+		                <label class="control-label">用户名:</label>
+		                <input name="username" type="text" class="form-control col-10 boxed"  placeholder="请输入用户名">
+		            </div>
+		            <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
+		                <label class="control-label">密码:</label>
+		                <input name="password" type="password" class="form-control col-10 boxed" placeholder="请输入密码">
+		            </div>
+		        </div>
+			</form>
+		</div>
+	</body>
+</html>

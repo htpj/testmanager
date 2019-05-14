@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "name": "demo01",
+        "description": "test",
+        "parentId": null,
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+    },
+    {
+        "id": "11",
+        "name": "1.0",
+        "description": "test",
+        "parentId": "1",
+        "level": 1,
+        "isLeaf": true,
+        "expanded": false
+    },
+    {
+        "id": "12",
+        "name": "2.0",
+        "description": "test",
+        "parentId": "1",
+        "level": 1,
+        "isLeaf": true,
+        "expanded": false
+    },
+    {
+        "id": "2",
+        "name": "demo02",
+        "description": "test",
+        "parentId": null,
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+    },
+    {
+        "id": "21",
+        "name": "1.0",
+        "description": "test",
+        "parentId": "2",
+        "level": 1,
+        "isLeaf": true,
+        "expanded": false
+    },
+    {
+        "id": "3",
+        "name": "demo03",
+        "description": "test",
+        "parentId": null,
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+    },
+    {
+        "id": "31",
+        "name": "1.0",
+        "description": "test",
+        "parentId": "3",
+        "level": 1,
+        "isLeaf": true,
+        "expanded": false
+    }
+]

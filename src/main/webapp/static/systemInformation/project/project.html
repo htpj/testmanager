@@ -1,0 +1,71 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-title-block">
+                        <h3>项目管理</h3>
+                    </div>
+                    <section class="example">
+                        <div class="table-flip-scroll">
+                            <div class="row ml5">
+                                <div class="col-md-4">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="ProjectName" id="projectNameQuery" placeholder="请输入项目名称" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" id="queryProjectBtn" class="btn btn-info-outline">查询</button>
+                                    <button type="button" id="addProjectBtn" class="btn btn-info-outline">新建项目</button>
+                                </div>
+                            </div>
+                            <div class="jq-grid-box">
+	                            <table id="projectAndReleaseGrid"></table>
+	                            <div id="jqGridPager"></div> 
+	                        </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="addProjectBox" title="项目管理" class="displaynone">
+	<form class="m15">
+        <div class="row row-sm stats-container">
+            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                <label class="control-label">项目名称:</label>
+                <input name="projectName" type="text" class="form-control col-10 boxed" placeholder="请输入项目名称">
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                <label class="control-label">项目描述:</label>
+                <textarea rows="3" class="form-control" name="projectDescription" placeholder="请输入项目描述"></textarea>
+            </div>
+            <div name="releaseName" class="col-12 col-sm-6 stat-col" style="top: 32px;">
+                <label class="control-label">版本名称:</label>
+                <input name="releaseName" type="text" class="form-control col-10 boxed" placeholder="请输入版本名称">
+            </div>
+            <div name="releaseDescription" class="col-12 col-sm-6 stat-col" style="top: 32px;">
+                <label class="control-label">版本描述:</label>
+                <textarea rows="3" class="form-control" name="releaseDescription" placeholder="请输入版本描述"></textarea>
+            </div>
+        </div>
+	</form>
+</div>
+<div id="addReleaseBox" title="版本管理" class="displaynone">
+	<form class="m15">
+        <div class="row row-sm stats-container">
+             <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                <label class="control-label">版本名称:</label>
+                <input name="releaseBoxReleaseName" type="text" class="form-control col-10 boxed" placeholder="请输入版本名称">
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                <label class="control-label">版本描述:</label>
+                <textarea rows="3" class="form-control" name="releaseBoxReleaseDescription" placeholder="请输入版本描述"></textarea>
+            </div>
+        </div>
+	</form>
+</div>

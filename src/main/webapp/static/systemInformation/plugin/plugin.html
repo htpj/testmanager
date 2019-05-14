@@ -1,0 +1,235 @@
+<section class="section">
+    <div class="row sameheight-container">
+
+        <div class="col-md-12">
+            <div class="card sameheight-item" data-exclude="xs" data-name="testTab">
+                <div class="card-title-block">
+                    <input type="hidden" name="applicationId">
+                    <!--value="0000000001"-->
+                </div>
+                <div class="card-header card-header-sm bordered">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" id="pluginTab">
+                            <a class="nav-link active" href="javascript:;">插件配置</a>
+                        </li>
+                        <li class="nav-item" id="applicationConfigTab">
+                            <a class="nav-link" href="javascript:;">应用与上下文配置</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-block">
+                    <div class="tab-content">
+                        <div class="tab-pane" style="display:block">
+                            <div class="card-title-block">
+                                <h3>插件列表</h3>
+                            </div>
+                            <section class="example">
+                                <div class="table-responsive">
+                                    <div class="row ml5">
+                                        <div class="col-md-4">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="请输入插件名称" class="form-control underlined" id="searchName">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" id="searchPluginBtn" class="btn btn-info-outline">查询</button>
+                                            <button type="button" id="addPluginBtn" class="btn btn-info-outline">添加</button>
+                                        </div>
+                                    </div>
+                                    <div class="jq-grid-box">
+                                        <table id="pluginGrid"></table>
+                                        <div id="pluginGridPager"></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane">
+                            <section class="section">
+                                <div class="row sameheight-container">
+                                    <div class="col col-12 col-sm-12 col-md-6 col-xl-4 stats-col">
+                                        <div class="card sameheight-item stats" data-exclude="xs">
+                                            <div class="card-block">
+                                                <div class="card-title-block">
+                                                    <h3> 插件列表</h3>
+                                                </div>
+                                                <section class="example">
+                                                    <div class="row ml5">
+                                                        <div class="col-md-8">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <input type="text" id="queryName" placeholder="请输入插件名称"
+                                                                           class="form-control underlined">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <button type="button" id="queryNameBtn" class="btn btn-info-outline">查询</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jq-grid-box">
+                                                        <table id="pluginListGrid"></table>
+                                                        <div id="pluginListGridPager"></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-12 col-md-6 col-xl-8 history-col">
+                                        <div class="card sameheight-item" data-exclude="xs" id="dashboard-history">
+                                            <div class="card-block">
+                                                <div class="card-title-block">
+                                                    <h3>应用与上下文配置列表</h3>
+                                                </div>
+                                                <section class="example">
+                                                    <div class="table-responsive">
+                                                        <div class="row ml5">
+                                                            <div class="col-md-5">
+                                                                <form role="form">
+                                                                    <div class="form-group">
+                                                                        <input type="text" id='baffleAppName' placeholder="请输入应用名称"
+                                                                               class="form-control underlined" value="">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <button type="button" id="searchApplicationBtn" class="btn btn-info-outline">查询</button>
+                                                                <button type="button" id="addConfigBtn" class="btn btn-info-outline">添加</button>
+                                                                <button type="button" id="enableBtn" class="btn btn-success-outline">启用</button>
+                                                                <button type="button" id="diableBtn" class="btn btn-warning-outline">停用</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jq-grid-box">
+                                                            <table id="configGrid"></table>
+                                                            <div id="configGridPager"></div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="addPluginBox" title="插件配置新增" class="displaynone">
+    <div style="margin-left: 12%">
+        <form class="m15" id="pluginForm">
+            <div class="form-group">
+                <label class="control-label col-3"></label>
+                <div class="col-6">
+                    <button type="button" id="uploadPluginBtn" class="btn btn-info-outline">上传插件</button>
+                    <input id="pluginUpload" class="input_file" type="file" name="files[]" multiple>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">插件类型：</label>
+                <div class="col-6">
+                    <select id="pluginType" class="form-control col-10 boxed">
+                        <option value="-1">请选择插件类型</option>
+                        <option value="0">服务管理</option>
+                        <option value="1">报文处理</option>
+                        <option value="2">报文节点映射</option>
+                        <option value="3">结果处理</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">插件名称：</label>
+                <div class="col-10">
+                    <input id="pluginName" type="text" class="form-control boxed" placeholder="请输入插件名称">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">源名称：</label>
+                <div class="col-10">
+                    <input id="pluginSourceName" type="text" class="form-control boxed" placeholder="请输入源名称" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">类路径：</label>
+                <div class="col-10">
+                    <input id="pluginClassPath" type="text" class="form-control boxed" placeholder="请输入类路径（如：com.icss.test）">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">插件版本：</label>
+                <div class="col-10">
+                    <input id="pluginVersion" type="text" class="form-control boxed" placeholder="请输入版本">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-3">插件描述：</label>
+                <div class="col-10">
+                    <textarea rows="3" class="form-control text-area" id="pluginDescribe" id="pluginDescribes" placeholder="请输入插件描述"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="addContextBox" title="应用与上下文配置编辑" class="displaynone">
+    <div style="margin-left: 12%">
+        <form class="m15" id="contextForm">
+
+            <div class="form-group">
+                <label class="control-label col-3">插件列表：</label>
+                <div class="col-6">
+                    <select id="pluginSelect" class="form-control col-10 boxed">
+                        <option value="-1">请选择插件配置</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">应用系统：</label>
+                <div class="col-6">
+                    <select id="applicationSelect" class="form-control col-10 boxed">
+                        <option value="-1">请选择应用系统</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">服务端环境：</label>
+                <div class="col-6">
+                    <select id="environmentSelect" class="form-control col-10 boxed">
+                        <option value="">全部</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-10">
+                    <table id="contextGrid"></table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="contextBox" title="查看上下文配置信息" class="displaynone">
+		
+    <div style="margin-left: 12%">
+        <form class="m15" id="contextForm2">
+        
+			<div class="form-group">
+			    <label class="control-label col-3">系统环境：</label>
+			    <div class="col-6">
+			        <select id="environmentSelect2" class="form-control col-10 boxed">
+			            <option value="-1">请选择系统环境</option>
+			        </select>
+			    </div>
+			</div>
+            <div class="form-group">
+                <div class="col-10">
+                    <table id="contextGrid2"></table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
