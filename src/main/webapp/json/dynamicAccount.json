@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "id": "8526144221",
+      "accountDate":"20190802",
+      "txnDate":"20190801",
+      "coreNo":"sajdfh0237237623762327372637",
+      "channelNo":"2726336",
+      "txnScenario":"A公司为C公司提供劳务,借：库存现金／银行存款13510,贷：主营业务收入 13510",
+      "txnAmount":  "201125",
+      "customerAmount":"262",
+      "internalAmount":"90",
+      "typeAmount":"23237322",
+      "tester":"张三",
+      "accountOrg":"2372827",
+      "direction": "D-DEBIT",
+      "accountNO":"10010103",
+      "amount":"237",
+      "AcustomerAmount":"2377",
+      "AinternalAmount":"232",
+      "AtypeAmount":"292",
+      "coreTester":"李四",
+      "testRight":"Y",
+      "businessMan":"王五",
+      "businessRight":"N",
+      "aMoneyType": "CNY",
+      "txnCode":"1234567",
+      
+      "scenarioName":"A公司为C公司提供劳务,借：库存现金／银行存款13510,贷：主营业务收入 13510",
+      "bank":"010000 156 1001010302 000001",
+      
+      
+      "accountType":"1001010301",
+     
+      "remark":""
+    }
+  ]
+}
