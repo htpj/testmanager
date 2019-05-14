@@ -1,0 +1,37 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-title-block">
+                        <h3>外部客户帐余额数据导入</h3>
+                    </div>
+                    <section class="example">
+                        <div class="table-flip-scroll">
+                            <div class="row ml5">
+                                <div class="col-md-4">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="nameQuery" placeholder="请输入文件名称" class="form-control underlined" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" id="queryBtn" class="btn btn-info-outline">查询</button>
+                                    <button type="button" id="uploadBtn" data-btn="uploadBtn"  class="btn btn-info-outline" >上传</button>
+                                    <input id="fileUpload" class="input_file" type="file" name="files[]" multiple style="display:none">
+                                </div>
+                            </div>
+                            <div class="jq-grid-box">
+                                <table id="externalAccountBalance"></table>
+                                <div id="externalAccountBalancePager"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
