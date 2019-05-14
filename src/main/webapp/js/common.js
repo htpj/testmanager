@@ -321,7 +321,7 @@ function ajaxFunction(url, type, data, successFunction) {
 
 function initGrid(url, gridId, colModel, colNames, onSelectRowFunction, gridCompleteFunction) {
     if(url == null || url == ''){
-        url='/microservice/baffle/applications';
+        url='json/generalCheckSubject.json';
     }
     var systemGrid = $("#"+gridId).jqGrid({
         url: url,
@@ -336,12 +336,12 @@ function initGrid(url, gridId, colModel, colNames, onSelectRowFunction, gridComp
         rownumWidth: 25,
         autowidth: true,
         pager: "#"+gridId+"Pager",
-        jsonReader: {
+        /*jsonReader: {
             root: "data", //root这里的值是rows，意味着它会读取json中的rows键的值，这个值就是真实的数据
             page: "page", //root这里的值是page，意味着它会读取json中的page键的值，当前页号
             total: "totalpages",//总的页数
             records: "total"//总记录数
-        },
+        },*/
         gridComplete: gridCompleteFunction,
         onSelectRow: onSelectRowFunction,
         loadComplete: function () { // 加载数据
