@@ -54,8 +54,8 @@ $(document).ready(function () {
         systemGrid.setSelection(id);
         var rowData = systemGrid.getRowData(id);
         $("#addSubjectBox input[name=subjectNo]").val(rowData.subjectNo);
-        $("#addSubjectBox textarea[name=subjectLevel]").val(rowData.subjectLevel);
-        $("#addSubjectBox textarea[name=isCheck]").val(rowData.isCheck);
+        $("#addSubjectBox input[name=subjectLevel]").val(rowData.subjectLevel);
+        $("#addSubjectBox select[name=isCheck]").val(rowData.isCheck);
         $(window).resize();
         addSubjectBox.dialog("open");
     });
