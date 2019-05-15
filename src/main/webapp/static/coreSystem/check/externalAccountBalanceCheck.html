@@ -1,0 +1,77 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="card-title-block">
+                        <h3>外部客户余额数据查询列表</h3>
+                    </div>
+                    <section class="example">
+                        <div class="table-flip-scroll">
+
+                            <div class="row ml5">
+
+                                <div class="col-md-3">
+                                    <button type="button" id="queryBtn" class="btn btn-info-outline">查询</button>
+                                </div>
+                            </div>
+                            <div class="jq-grid-box">
+                                <table id="jqGridSubject"></table>
+                                <div id="jqGridSubjectPager"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--弹框 start-->
+<div id="addSubjectBox" title="部客户余额数据"  style="display:none">
+    <form class="m15" id="addSubjectForm">
+        <div class="row row-sm stats-container">
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">机构:</label>
+                <input name="institusion" class="form-control col-10 boxed"readonly="readonly" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col">
+                <label class="control-label">币种:</label>
+                <input name="curency"  class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">科目号:</label>
+                <input name="subject" type="text" class="form-control col-10 boxed" disabled="disabled">
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" id="httpSelectDiv">
+                <label class="control-label">外部客户账户:</label>
+                <input name="externalAccount" class="form-control col-10 boxed" disabled="disabled" />
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">日期:</label>
+                <input name="date" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">余额:</label>
+                <input name="nowMon" class="form-control col-10 boxed"disabled="disabled"/>
+            </div>
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;" >
+                <label class="control-label">前次记录余额:</label>
+                <input name="lastMon"  class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+
+
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">最后更新日期:</label>
+                <input name="updDate" type="text" class="form-control col-10 boxed" disabled="disabled"/>
+            </div>
+            <div class="col-12 col-sm-6 stat-col" style="margin-top: 12px;">
+                <label class="control-label">时间:</label>
+                <input name="time" type="text" class="form-control col-10 boxed" readonly="readonly"/>
+            </div>
+
+        </div>
+    </form>
+
+
+</div>
