@@ -12,24 +12,15 @@ $(document).ready(function () {
         mtype: "GET",
         datatype: "json",
         page: 1,
-        colNames: ['', '任务编号', '任务名称', '测试经理', '测试技术经理', '项目经理', '操作'],
+        colNames: ['', '案例编号', '系统名称', '模块', '交易名称',
+            '功能点', '测试类型', '优先级', '设计人', '设计日期', '测试要点',
+            '前置条件', '输入数据', '测试步骤', '状态', '操作'],
         colModel: [
             {name: 'radio', index: 'radio', width: 48},
-            {name: 'caseNo', index: 'taskNo', width: 90, key: true},
+            {name: 'taskNo', index: 'taskNo', width: 90, key: true},
             {name: 'taskName', index: 'taskName', width: 90},
             {name: 'testManager', index: 'testManager', width: 90},
             {name: 'testTechManager', index: 'testTechManager', width: 100},
-            {
-                name: 'type', index: 'type', width: 90,
-                formatter: function (value, options, rowdata) {
-                    if (value != null) {
-                        value = (value == "00" ? "查看角色" : "增删改查角色");
-                    } else {
-                        value = "";
-                    }
-                    return value;
-                }
-            },
             {name: 'operation', index: 'operation', width: 100}
         ],
         viewrecords: true,
