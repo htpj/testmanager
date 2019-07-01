@@ -5,39 +5,75 @@
 </head>
 <body>
 <section class="section">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-block">
-                    <div class="card-title-block">
-                        <h3>测试任务</h3>
-                    </div>
-                    <section class="example">
-                        <div class="table-flip-scroll">
-                            <div class="row ml5">
-                                <div class="col-md-4">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <input type="text" name="RoleName" id="roleNameQuery" placeholder="请输入角色名称"
-                                                   class="form-control underlined" value="">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-3">
-                                    <button type="button" id="queryRoleBtn" class="btn btn-info-outline">查询</button>
-                                    <button type="button" id="addRoleBtn" class="btn btn-info-outline">添加</button>
-                                </div>
-                            </div>
-                            <div class="jq-grid-box">
-                                <table id="jqGridRole"></table>
-                                <div id="jqGridPagerRole"></div>
+    <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<div class="card">-->
+    <div class="card-block">
+        <div class="card-title-block">
+            <h3>测试任务</h3>
+        </div>
+        <!--<section class="example">-->
+        <div class="table-flip-scroll">
+            <div class="row">
+
+                <!--<div class="row ml5">-->
+                <div class="col-md-12">
+                    <form role="form">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!--<label class="control-label">Input Text</label>-->
+                                <input type="text" name="RoleName" id="taskNoQuery" placeholder="请输入角色名称"
+                                       class="form-control underlined" value="">
                             </div>
                         </div>
-                    </section>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!--<label class="control-label">Input Text</label>-->
+                                <input type="text" name="RoleName" id="taskNameQuery" placeholder="请输入角色名称"
+                                       class="form-control underlined" value="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!--<label class="control-label">Input Text</label>-->
+                                <input type="text" name="RoleName" id="testManagerQuery" placeholder="请输入角色名称"
+                                       class="form-control underlined" value="">
+                            </div>
+                        </div>
+                    </form>
+                    <!--</div>-->
+                    <!--<div class="col-md-3">-->
+                    <!--<button type="button" id="queryRoleBtn" class="btn btn-info-outline">查询</button>-->
+                    <!--<button type="button" id="addRoleBtn" class="btn btn-info-outline">添加</button>-->
+                </div>
+                <!--</div>-->
+
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <button type="button" id="editTaskBtn" class="btn btn-info-outline">分析</button>
+                    <button type="button" id="editCaseBtn" class="btn btn-info-outline">设计案例</button>
+                </div>
+                <div class="col-md-2" align="right">
+                    <button type="button" id="queryRoleBtn" class="btn btn-info-outline">查询</button>
+                    <button type="button" id="addRoleBtn" class="btn btn-info-outline">添加</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jq-grid-box">
+                        <table id="jqGridRole"></table>
+                        <div id="jqGridPagerRole"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--</section>-->
     </div>
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </section>
 <!--弹框-->
 <div id="addRoleBox" title="任务管理" class="displaynone">

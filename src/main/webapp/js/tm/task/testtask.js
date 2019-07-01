@@ -12,8 +12,9 @@ $(document).ready(function () {
         mtype: "GET",
         datatype: "json",
         page: 1,
-        colNames: ['任务编号', '任务名称', '测试经理', '测试技术经理', '项目经理'],
+        colNames: ['', '任务编号', '任务名称', '测试经理', '测试技术经理', '项目经理', '操作'],
         colModel: [
+            {name: 'radio', index: 'radio', width: 48},
             {name: 'taskNo', index: 'taskNo', width: 90, key: true},
             {name: 'taskName', index: 'taskName', width: 90},
             {name: 'testManager', index: 'testManager', width: 90},
@@ -29,7 +30,7 @@ $(document).ready(function () {
                     return value;
                 }
             },
-
+            {name: 'operation', index: 'operation', width: 100}
         ],
         viewrecords: true,
         height: 385,
@@ -46,19 +47,26 @@ $(document).ready(function () {
         },
         gridComplete: function () {
             var ids = roleGrid.getDataIDs();
+            console.log("数据ID：" + ids);
             for (var i = 0; i < ids.length; i++) {
                 var id = ids[i];
                 var operation = '<button type="button" data-id="' + id + '" data-btn="upd" class="btn btn-info-outline">修改</button> '
                     + '<button type="button" data-id="' + id + '" data-btn="del" class="btn btn-info-outline">删除</button>';
                 roleGrid.setRowData(ids[i], {operation: operation});
+                var radioEl = '<div><label><input class="radio" type="radio" name="radios" ><span></span></label></div>';
+                roleGrid.setRowData(ids[i], {radio: radioEl});
             }
+
         },
         loadComplete: function () { // 加载数据
+            console.log("加载完成");
             var re_records = roleGrid.getGridParam('records');
             if (re_records == 0 || re_records == null) {
                 roleGrid.before('<div class="jq-grid-tip">没有相关数据</div>')
             }
             setSameHeights();
+            // console.log($("#jqGridRole").find("tr[role='row']").length);
+            // console.log(roleGrid.find("tr[role=row]"));
         }
     });
 
@@ -199,5 +207,18 @@ $(document).ready(function () {
         $("#description").val(rowData.description);
         addRoleDailog.dialog("open");
     });
+    //修改角色
+    roleGrid.on("click", "tr[role=row]", function () {
+        console.log("...");
+        var $radio = $(this).find("input[type=radio]").first();
+        var checked = $radio.attr("checked");
+
+        if (checked || checked == "checked") {
+            $radio.removeAttr("checked");
+        } else {
+            $radio.attr("checked", "checked");
+        }
+    });
+
 
 });
