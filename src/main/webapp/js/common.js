@@ -254,7 +254,7 @@ $("#headerMenu").on("click", "a", function () {
 
 //显示指定页面
 function showPage(page) {
-    $("#autoUIPage").hide();
+   $("#autoUIPage").hide();
     $("#openPage").hide();
     $("#settingPage").hide();
     $("#dbTestPage").hide();

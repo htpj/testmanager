@@ -4,7 +4,7 @@ $(document).ready(function () {
     $.jgrid.defaults.styleUI = 'Bootstrap';
     
     var roleGrid;
-    var basicUrl= "microservice/baffle/role";
+    var basicUrl= "/json/role.json";
     //初始化表格
     roleGrid = $("#jqGridRole").jqGrid({
     	url:basicUrl,
@@ -37,7 +37,7 @@ $(document).ready(function () {
         autowidth: true,
     	pager:'jqGridPagerRole',
     	jsonReader: {
-            root: "data", //root这里的值是rows，意味着它会读取json中的rows键的值，这个值就是真实的数据
+            root: "rows", //root这里的值是rows，意味着它会读取json中的rows键的值，这个值就是真实的数据
             page: "page", //root这里的值是page，意味着它会读取json中的page键的值，当前页号
             total: "totalpages",//总的页数
             records: "total"//总记录数

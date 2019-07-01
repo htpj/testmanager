@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="atc-demo-ui:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="atc-demo-ui-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="atc-demo-ui:war exploded" />
+    </root>
+  </artifact>
+</component>

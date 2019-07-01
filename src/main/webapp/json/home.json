@@ -1,0 +1,84 @@
+[
+  {
+    "id": "1",
+    "name": "测试管理",
+    "description": "test",
+    "parentId": null,
+    "level": 0,
+    "isLeaf": false,
+    "expanded": false,
+    "child": [
+      {
+        "id": "101",
+        "name": "测试任务",
+        "description": "test task",
+        "parentId": "1",
+        "dataPage": "static/tm/task/testtask",
+        "dataScript": "js/tm/task/testtask.js",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      },
+      {
+        "id": "102",
+        "name": "测试案例",
+        "description": "test",
+        "parentId": "1",
+        "dataPage": "static/systemInformation/user/userMaintain",
+        "dataScript": "js/systemInformation/user/userMaintain.js",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      },
+      {
+        "id": "103",
+        "name": "测试资产",
+        "description": "test",
+        "parentId": "1",
+        "dataPage": "static/systemInformation/user/userMaintain",
+        "dataScript": "js/systemInformation/user/userMaintain.js",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      }
+    ]
+  },
+  {
+    "id": "S",
+    "name": "系统管理",
+    "description": "test",
+    "parentId": null,
+    "level": 0,
+    "isLeaf": false,
+    "expanded": false,
+    "child": [
+      {
+        "id": "S01",
+        "name": "用户管理",
+        "description": "test",
+        "parentId": "S",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      },
+      {
+        "id": "S02",
+        "name": "角色管理",
+        "description": "test",
+        "parentId": "S",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      },
+      {
+        "id": "S03",
+        "name": "菜单管理",
+        "description": "test",
+        "parentId": "",
+        "level": 0,
+        "isLeaf": false,
+        "expanded": false
+      }
+    ]
+  }
+]

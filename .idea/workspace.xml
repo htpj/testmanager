@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5472d87-2f6a-495b-82d5-9456d158d3a3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/tm/task/testtask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/tm/case/testcase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/tm/task/testtask.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/baffle/account/dynamicAccount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/baffle/account/prefferAccount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/baffle/account/scenarioAccount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/baffle/bussinessSystem/bussinessSystem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/externalAccountBalanceCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/generalLedgerImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/internalAccountBalanceCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/internalAccountCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/subjectParamCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/check/transactionSubpoenaHistoryCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/generalCheckSubject/generalCheckSubject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/externalAccountBalanceImport1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/generalLedgerImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/internalAccountBalanceImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/internalAccountParamImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/subjectParamImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/coreSystem/import/transactionSubpoenaHistoryImport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/plugin/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/dynamicAccount.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/externalAccountBalanceCheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/externalAccountBalanceImport1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/generalCheckSubject.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/generalLedger.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/generalLedgerImport.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/internalAccountBalanceCheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/internalAccountBalanceImport.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/internalAccountCheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/internalAccountParam.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/prefferAccount.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/scenarioAccount.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/subjectParamCheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/subjectParamImport.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/transactionSubpoenaHistoryCheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/json/transactionSubpoenaHistoryImport.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/baffle/account/dynamicAccount.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/baffle/account/prefferAccount.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/baffle/account/scenarioAccount.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/baffle/bussinessSystem/businessSystem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/externalAccountBalanceCheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/generalLedgerImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/internalAccountBalanceCheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/internalAccountCheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/subjectParamCheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/check/transactionSubpoenaHistoryCheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/generalCheckSubject/generalCheckSubject.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/externalAccountBalanceImport1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/generalLedgerImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/internalAccountBalanceImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/internalAccountParamImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/subjectParamImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/coreSystem/import/transactionSubpoenaHistoryImport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/plugin/plugin.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/ForwardServlet2.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/ForwardServlet2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/404.html" afterPath="$PROJECT_DIR$/src/main/webapp/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/500.html" afterPath="$PROJECT_DIR$/src/main/webapp/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-custom.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-green.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-green.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-orange.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-orange.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-purple.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-purple.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-red.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-red.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app-seagreen.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app-seagreen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/app.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/vendor.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/vendor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/download.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/download.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/project/data.json" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/project/data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/project/project.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/project/project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/role/roleMaintain.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/role/roleMaintain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/user/userMaintain.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemInformation/user/userMaintain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/vendor.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/vendor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.az.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.da.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.de.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.el.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.es.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.he.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.id.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.is.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.it.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.no.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.th.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/echarts/echarts.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/echarts/echarts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/cors/jquery.postmessage-transport.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/cors/jquery.postmessage-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/cors/jquery.xdr-transport.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/cors/jquery.xdr-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-angular.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-audio.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-audio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-image.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-jquery-ui.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-jquery-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-process.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-process.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-validate.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-video.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload-video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.fileupload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/jquery.iframe-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/vendor/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fileupload/vendor/jquery.ui.widget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/main/webapp/lib/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go-debug.d.ts" afterPath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go-debug.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go-debug.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go.d.ts" afterPath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/gojs/release/go.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/ipInput.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/ipInput.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/ipInput.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/ipInput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/jquery.ipinput.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/jquery.ipinput.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/jquery.ipinput.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ipInput/jquery.ipinput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/grid.locale-cn.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/grid.locale-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/jquery.jqGrid.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/jquery.jqGrid.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid-bootstrap-ui.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid-bootstrap-ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid-bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid-bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.1.1/ui.jqgrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/addons/ui.multiselect.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/addons/ui.multiselect.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap-ui.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap-ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap4.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap4.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/css/ui.jqgrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/addons/ui.multiselect.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/addons/ui.multiselect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.base.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.celledit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.celledit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.common.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.export.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.export.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.filter.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.formedit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.formedit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.grouping.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.grouping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.import.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.import.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.inlinedit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.inlinedit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.jqueryui.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.jqueryui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.pivot.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.pivot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.subgrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.subgrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.treegrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.treegrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.utils.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/grid.utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ar.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-bg.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ca.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-cn.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-cs.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-de.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-dk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-dk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-el.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-en.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-es.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fa.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-gl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-he.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-hr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-hu.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-id.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-is.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-it.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ja.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-kr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-kr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-lt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-me.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-nl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-no.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pt-br.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ro.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ru.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sq.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sr-latin.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sr-latin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sv.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-th.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-tr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-tw.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-tw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-uk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-vi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/i18n/grid.locale-vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jqDnR.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jqDnR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jqModal.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jqModal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.fmatter.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.fmatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.jqGrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.jqGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.jqGrid.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.jqGrid.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.sortable.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/jquery.sortable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.base.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.celledit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.celledit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.common.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.export.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.export.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.filter.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.formedit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.formedit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.grouping.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.grouping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.import.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.import.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.inlinedit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.inlinedit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.jqueryui.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.jqueryui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.pivot.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.pivot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.subgrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.subgrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.treegrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.treegrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.utils.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/grid.utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jqDnR.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jqDnR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jqModal.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jqModal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jquery.fmatter.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jquery.fmatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jquery.sortable.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/js/minified/jquery.sortable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.addons.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.addons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.postext.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.postext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.setcolumns.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.setcolumns.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.tbltogrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/grid.tbltogrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.contextmenu.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.contextmenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.searchFilter.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.searchFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.tablednd.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/jquery.tablednd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/searchFilter.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqGrid.5.3.2/plugins/searchFilter.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/jquery.steps.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/jquery.steps.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/normalize.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/css/normalize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/jquery.steps.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/jquery.steps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/jquery.steps.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-steps/jquery.steps.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqueryui/jquery-ui.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqueryui/jquery-ui.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jqueryui/jquery-ui.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jqueryui/jquery-ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/js/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiSelect/jquery.multi-select.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiSelect/jquery.multi-select.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiSelect/jquery.multi-select.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiSelect/jquery.multi-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/README.md" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.jquery.json" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.jquery.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/multiple-select/multiple-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/css/select2.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/css/select2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/css/select2.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/css/select2.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/af.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ar.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/az.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/bg.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/bs.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ca.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/cs.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/da.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/de.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/dsb.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/dsb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/el.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/en.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/es.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/et.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/eu.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fa.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/gl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/he.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hsb.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hsb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hu.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hy.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/hy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/id.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/is.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/it.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ja.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/km.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ko.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/lt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/lv.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/mk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ms.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/nb.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/nl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ps.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pt-BR.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pt-BR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pt.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ro.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ru.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sr-Cyrl.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sr-Cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sv.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/th.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/tk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/tk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/tr.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/uk.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/vi.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/zh-CN.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/zh-CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/zh-TW.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/i18n/zh-TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/select2.full.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/select2.full.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/select2.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/dist/js/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/select2/select2-multi-checkbox.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/select2/select2-multi-checkbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ztree/css/metroStyle/metroStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ztree/css/metroStyle/metroStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.all.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.core.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.excheck.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.excheck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.exedit.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/ztree/jquery.ztree.exedit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/signup.html" afterPath="$PROJECT_DIR$/src/main/webapp/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/project/project.html" afterPath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/project/project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/role/roleMaintain.html" afterPath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/role/roleMaintain.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/user/userMaintain.html" afterPath="$PROJECT_DIR$/src/main/webapp/static/systemInformation/user/userMaintain.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <marker date="1561889147964" expanded="true" signature="3375:3519" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/json/home.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atc-demo-ui.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atc-demo-ui.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".classpath" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.classpath">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testtask.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/task/testtask.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testtask.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/tm/task/testtask.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/case/testcase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6354">
+              <caret line="353" column="22" lean-forward="false" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#ul#2;n#nav#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>upd</find>
+      <find>data-page</find>
+      <find>settingPage</find>
+      <find>common</find>
+      <find>data-btn</find>
+      <find>openPage</find>
+      <find>testTaskPage</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/js/data.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/tm/case/testcase.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/json/tm/task/task.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/tm/task/testcase.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/tm/task/testtask.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/tm/task/testtask.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/home.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/json/home.json" />
+        <option value="$PROJECT_DIR$/atc-demo-ui.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="atc-demo-ui" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atc-demo-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atc-demo-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/json" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/static/tm/task" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/json/tm/task" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/js/tm/task" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/static/tm/case" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/static/tm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.tomcat7:run">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_atc-demo-ui" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="15925" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="18305" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="atc-demo-ui" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="openshift-deploy" factoryName="OpenShift Deployment">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat7:run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.70" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_atc-demo-ui_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="15925" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.70" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_atc-demo-ui_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="15925" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Maven.tomcat7:run" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat7" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.tomcat8" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5472d87-2f6a-495b-82d5-9456d158d3a3" name="Default" comment="" />
+      <created>1561881659140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561881659140</updated>
+      <workItem from="1561881665294" duration="10837000" />
+      <workItem from="1561943181018" duration="1121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11958000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6701389" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.546875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2621212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="512" y="196" width="341" height="402" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6701389" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25833333" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="512" y="196" width="341" height="402" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1561889147964" expanded="true" signature="3375:3519" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/task/testtask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/tm/task/testtask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/case/testcase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6354">
+          <caret line="353" column="22" lean-forward="false" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#ul#2;n#nav#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/json/tm/task/testtask.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/json/home.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="265" column="22" lean-forward="false" selection-start-line="265" selection-start-column="22" selection-end-line="265" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemInformation/role/roleMaintain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="49" column="74" lean-forward="false" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/systemInformation/role/roleMaintain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/json/user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/vendor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/json/tm/task/testtask.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1561889147964" expanded="true" signature="3375:3519" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6354">
+          <caret line="353" column="22" lean-forward="false" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#ul#2;n#nav#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/case/testcase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/tm/task/testtask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/tm/task/testtask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/json/home.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atc-demo-ui.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>atc-demo-ui:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>atc-demo-ui</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.15</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -3,21 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> 核心系统 </title>
+    <title>核心系统</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="lib/jqueryui/jquery-ui.min.css">
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="lib/jqGrid.5.1.1/ui.jqgrid-bootstrap.css">-->
-    <link rel="stylesheet" href="lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap4.css">
+    <link rel="stylesheet"
+          href="lib/jqGrid.5.3.2/css/ui.jqgrid-bootstrap4.css">
     <link rel="stylesheet" href="lib/css/bootstrap-table.min.css">
     <link rel="stylesheet" href="lib/ztree/css/metroStyle/metroStyle.css">
     <link rel="stylesheet" href="lib/multiSelect/jquery.multi-select.css">
     <link href="lib/multiple-select/multiple-select.css" rel="stylesheet"/>
     <link rel="stylesheet" href="lib/ipInput/ipInput.min.css">
     <link rel="stylesheet" href="lib/jquery-comfirm/jquery-comfirm.min.css">
-    <link href="lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" >
+    <link
+            href="lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"
+            rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/vendor.css">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" /> -->
@@ -25,469 +28,360 @@
     <link rel="stylesheet" href="lib/select2/select2.min.css">
     <link rel="stylesheet" href="lib/jquery-steps/css/jquery.steps.css">
     <!-- <script rel="stylesheet" href="lib/gojs/release/go.js"></script>
-     <script rel="stylesheet" href="lib/gojs/release/go-debug.js"></script>-->
+         <script rel="stylesheet" href="lib/gojs/release/go-debug.js"></script>-->
 
 
-        <!-- Theme initialization -->
-        <script>
-            var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
-            {};
-            var themeName = themeSettings.themeName || '';
-            if (themeName)
-            {
-                document.write('<link rel="stylesheet" id="theme-style" href="css/app-' + themeName + '.css">');
-            }
-            else
-            {
-                document.write('<link rel="stylesheet" id="theme-style" href="css/app.css">');
-            }
-        </script>
-    </head>
-    <body>
-        <div class="main-wrapper">
-            <div class="app" id="app">
-                <header class="header">
-                    <div class="header-block header-block-collapse d-lg-none d-xl-none">
-                        <button class="collapse-btn" id="sidebar-collapse-btn">
-                            <i class="fa fa-bars"></i>
+    <!-- Theme initialization -->
+    <script>
+        var themeSettings = (localStorage.getItem('themeSettings')) ? JSON
+            .parse(localStorage.getItem('themeSettings')) : {};
+        var themeName = themeSettings.themeName || '';
+        if (themeName) {
+            document
+                .write('<link rel="stylesheet" id="theme-style" href="css/app-' + themeName + '.css">');
+        } else {
+            document
+                .write('<link rel="stylesheet" id="theme-style" href="css/app.css">');
+        }
+    </script>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="app" id="app">
+        <header class="header">
+            <div class="header-block header-block-collapse d-lg-none d-xl-none">
+                <button class="collapse-btn" id="sidebar-collapse-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-block header-block-menu" id="headerMenu">
+                <ul>
+                    <!--<li><a class="active" href="#" id="tdm">MOCK挡板</a></li>-->
+                    <!-- <li><a href="#" id="autoUI">UI自动化</a></li>
+                         <li><a href="#" id="dbTest">数据库测试</a></li>
+                        <li><a href="#">批处理</a></li>
+                        <li><a href="#">MOCK挡板</a></li> -->
+                </ul>
+            </div>
+            <div class="header-block header-block-nav">
+                <ul class="nav-profile">
+                    <!--                        	<li>
+                            <label>项目:</label>
+                            <select id="projectSelect" style="width: 300px"></select>
+                            &lt;!&ndash; <img style="display: inline-block;" src="/img/Settings_18.png"></img>
+                            <img style="display: inline-block;" src="/img/refresh_icon_18.png"></img> &ndash;&gt;
+                        </li>-->
+                    <li class="profile dropdown"><a
+                            class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false"> <span
+                            id="userName1" class="name"> admin </span>
+                    </a>
+                        <div class="dropdown-menu profile-dropdown-menu"
+                             aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#" id="personalInfo"> <i
+                                    class="fa fa-user icon"></i> 个人信息
+                            </a> <a class="dropdown-item" href="#" id="systemSetting"> <i
+                                class="fa fa-gear icon"></i>系统设置
+                        </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" id="logout"> <i
+                                    class="fa fa-power-off icon"></i> 退出
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-header">
+                    <div class="brand">
+                        <div class="logo">
+                            <span class="l l1"></span> <span class="l l2"></span> <span
+                                class="l l3"></span> <span class="l l4"></span> <span
+                                class="l l5"></span>
+                        </div>
+                        核心系统
+                    </div>
+                </div>
+                <nav cass="menu" id="homeMneu">
+                    <ul class="sidebar-menu metismenu" id="settingPage">
+                        <li data-page="static/systemInformation/user/userMaintain"
+                            data-script="js/systemInformation/user/userMaintain.js"><a
+                                href="javascript:;"> <i class="fa fa-user"></i>用户管理
+                        </a></li>
+                        <li data-page="static/systemInformation/role/roleMaintain"
+                            data-script="js/systemInformation/rtestcase.jsn.js"><a
+                                href="javascript:;"> <i class="fa fa-users"></i>角色管理
+                        </a></li>
+                    </ul>
+                    <ul class="sidebar-menu metismenu" id="testTaskPage">
+
+                    </ul>
+                    <ul class="sidebar-menu metismenu" id="autoUIPage"
+                        style="display: none">
+                    </ul>
+                    <ul class="sidebar-menu metismenu" id="dataStatisticsPage"
+                        style="display: none">
+
+                    </ul>
+                    <ul class="sidebar-menu metismenu" id="dbTestPage"
+                        style="display: none">
+
+                    </ul>
+                </nav>
+            </div>
+            <footer class="sidebar-footer">
+                <ul class="sidebar-menu metismenu" id="customize-menu">
+                    <li>
+                        <ul>
+                            <li class="customize">
+                                <div class="customize-item">
+                                    <div class="row customize-header">
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <label class="title">固定</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="title">静态</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label class="title">侧边栏:</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="sidebarPosition" value="sidebar-fixed"> <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="sidebarPosition" value=""> <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label class="title">头部:</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="headerPosition" value="header-fixed"> <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="headerPosition" value=""> <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label class="title">尾部:</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="footerPosition" value="footer-fixed"> <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <label> <input class="radio" type="radio"
+                                                           name="footerPosition" value=""> <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-item">
+                                    <ul class="customize-colors">
+                                        <li><span class="color-item color-red" data-theme="red"></span>
+                                        </li>
+                                        <li><span class="color-item color-orange"
+                                                  data-theme="orange"></span></li>
+                                        <li><span class="color-item color-green active"
+                                                  data-theme=""></span></li>
+                                        <li><span class="color-item color-seagreen"
+                                                  data-theme="seagreen"></span></li>
+                                        <li><span class="color-item color-blue"
+                                                  data-theme="blue"></span></li>
+                                        <li><span class="color-item color-purple"
+                                                  data-theme="purple"></span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="javascript:;"><i class="fa fa-cog"></i> 定制 </a>
+                    </li>
+                </ul>
+            </footer>
+        </aside>
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <div class="sidebar-mobile-menu-handle"
+             id="sidebar-mobile-menu-handle"></div>
+        <div class="mobile-menu-handle"></div>
+        <article class="content dashboard-page" id="openPageBox"></article>
+        <footer class="footer">
+            <div class="footer-block">
+                <p class="text-center">
+                    <small>Copyright © 2012-2017 自动化测试项目组 V1.0</small>
+                </p>
+            </div>
+        </footer>
+        <div class="modal fade" id="modal-media">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Media Library</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                            <span aria-hidden="true">&times;</span> <span class="sr-only">Close</span>
                         </button>
                     </div>
-                    <div class="header-block header-block-menu" id="headerMenu">
-                        <ul>
-                            <!--<li><a class="active" href="#" id="tdm">MOCK挡板</a></li>-->
-                            <!-- <li><a href="#" id="autoUI">UI自动化</a></li>
-                             <li><a href="#" id="dbTest">数据库测试</a></li>
-                            <li><a href="#">批处理</a></li>
-                            <li><a href="#">MOCK挡板</a></li> -->
+                    <div class="modal-body modal-tab-container">
+                        <ul class="nav nav-tabs modal-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link" href="#gallery"
+                                                    data-toggle="tab" role="tab">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link active"
+                                                    href="#upload" data-toggle="tab" role="tab">Upload</a></li>
                         </ul>
-                    </div>
-                    <div class="header-block header-block-nav">
-                        <ul class="nav-profile">
-<!--                        	<li>
-                        		<label>项目:</label>
-                        		<select id="projectSelect" style="width: 300px"></select>
-                        		&lt;!&ndash; <img style="display: inline-block;" src="/img/Settings_18.png"></img>
-                        		<img style="display: inline-block;" src="/img/refresh_icon_18.png"></img> &ndash;&gt;
-                        	</li>-->
-                            <li class="profile dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <span id="userName1" class="name"> admin </span>
-                                </a>
-                                <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <a class="dropdown-item" href="#" id="personalInfo">
-                                        <i class="fa fa-user icon"></i> 个人信息 </a>
-                                    <!-- <a class="dropdown-item" href="#">
-                                        <i class="fa fa-gear icon"></i> 设置 </a>-->
-                    <!--                <a class="dropdown-item" href="#" id="dataStatistics">
-                                        <i class="fa fa-gear icon"></i> 数据统计 </a>-->
-                                    <a class="dropdown-item" href="#" id="systemSetting">
-                                    	<i class="fa fa-gear icon"></i>系统设置</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#" id="baffleManage">
-                                        <i class="fa fa-gear icon"></i>MOCK挡板</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#" id="logout">
-                                        <i class="fa fa-power-off icon"></i> 退出 </a>
+                        <div class="tab-content modal-tab-content">
+                            <div class="tab-pane fade" id="gallery" role="tabpanel">
+                                <div class="images-container">
+                                    <div class="row"></div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </header>
-                <aside class="sidebar">
-                    <div class="sidebar-container">
-                        <div class="sidebar-header">
-                            <div class="brand">
-                                <div class="logo">
-                                    <span class="l l1"></span>
-                                    <span class="l l2"></span>
-                                    <span class="l l3"></span>
-                                    <span class="l l4"></span>
-                                    <span class="l l5"></span>
-                                </div> 核心系统 </div>
-                        </div>
-                        <nav class="menu">
-                            <ul class="sidebar-menu metismenu" id="openPage">
-                                <li class="active" data-page="static/coreSystem/generalCheckSubject/generalCheckSubject" data-script="js/coreSystem/generalCheckSubject/generalCheckSubject.js">
-                                    <a href="javascript:;">
-                                        <i class="fa fa-home"></i> 总分核对项目参数
-                                    </a>
-                                </li>
-
-                                <li >
-                                    <a href="javacript:void(0);" aria-expanded="false">
-                                        <i class="fa fa-th-large"></i>预期核算模型模块
-                                        <i class="fa arrow"></i>
-                                    </a>
-                                    <ul class="sidebar-nav collapse " aria-expanded="true" style=""><!--in-->
-                                        <li data-page="static/baffle/account/prefferAccount" data-script="js/baffle/account/prefferAccount.js">
-                                            <a href="javascript:;">
-                                                <i class="fa fa-home"></i> 预期核算模型建立
-                                            </a>
-                                        </li>
-                                        <li data-page="static/baffle/account/scenarioAccount" data-script="js/baffle/account/scenarioAccount.js">
-                                            <a href="javascript:;">
-                                                <i class="fa fa-home"></i> 场景核算模型查询
-                                            </a>
-                                        </li>
-                                        <li data-page="static/baffle/account/dynamicAccount" data-script="js/baffle/account/dynamicAccount.js">
-                                            <a href="javascript:;">
-                                                <i class="fa fa-home"></i> 动账表核算模型查询
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javacript:void(0);" aria-expanded="false">
-                                        <i class="fa fa-area-chart"></i> 基础数据导入
-                                        <i class="fa arrow"></i>
-                                    </a>
-                                    <ul class="sidebar-nav collapse" aria-expanded="false">
-                                        <li data-page="static/coreSystem/import/subjectParamImport" data-script="js/coreSystem/import/subjectParamImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 科目属性参数导入
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/import/internalAccountParamImport" data-script="js/coreSystem/import/internalAccountParamImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 内部账户控制参数导入
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/import/transactionSubpoenaHistoryImport" data-script="js/coreSystem/import/transactionSubpoenaHistoryImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 交易传票历史导入
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/import/generalLedgerImport" data-script="js/coreSystem/import/generalLedgerImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 总账数据导入
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/import/externalAccountBalanceImport1" data-script="js/coreSystem/import/externalAccountBalanceImport1.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 外部客户账余额数据导入
-		                                    </a>
-		                                </li>
-		                                
-		                                <li data-page="static/coreSystem/import/internalAccountBalanceImport" data-script="js/coreSystem/import/internalAccountBalanceImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 内部账余额数据导入
-		                                    </a>
-		                                </li>
-		                                </ul>
-                                </li>
-                                
-                                
-                                <li>
-                                    <a href="javacript:void(0);" aria-expanded="false">
-                                        <i class="fa fa-area-chart"></i> 基础数据查询
-                                        <i class="fa arrow"></i>
-                                    </a>
-                                    <ul class="sidebar-nav collapse" aria-expanded="false">
-                                         <li data-page="static/coreSystem/check/subjectParamCheck" data-script="js/coreSystem/check/subjectParamCheck.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 科目属性参数查询
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/check/internalAccountCheck" data-script="js/coreSystem/check/internalAccountCheck.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 内部账户控制参数查询
-		                                    </a>
-		                                </li>
-		                                <li data-page="static/coreSystem/check/transactionSubpoenaHistoryCheck" data-script="js/coreSystem/check/transactionSubpoenaHistoryCheck.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 交易传票历史数据查询
-		                                    </a>
-		                                </li>
-                                        <li data-page="static/coreSystem/check/generalLedgerImport" data-script="js/coreSystem/check/generalLedgerImport.js">
-		                                    <a href="javascript:;">
-		                                        <i class="fa fa-home"></i> 总账数据查询
-		                                    </a>
-		                                </li>
-                                        <li data-page="static/coreSystem/check/externalAccountBalanceCheck" data-script="js/coreSystem/check/externalAccountBalanceCheck.js">
-                                            <a href="javascript:;">
-                                                <i class="fa fa-home"></i> 外部客户账余额数据查询
-                                            </a>
-                                        </li>
-                                        <li data-page="static/coreSystem/check/internalAccountBalanceCheck" data-script="js/coreSystem/check/internalAccountBalanceCheck.js">
-                                            <a href="javascript:;">
-                                                <i class="fa fa-home"></i> 内部账余额数据查询
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-
-                            </ul>
-                            <ul class="sidebar-menu metismenu" id="settingPage" style="display: none">
-                                <li data-page="static/systemInformation/user/userMaintain" data-script="js/systemInformation/user/userMaintain.js">
-                                    <a href="javascript:;">
-                                        <i class="fa fa-user"></i>用户管理</a>
-                                </li>
-                                <li data-page="static/systemInformation/role/roleMaintain" data-script="js/systemInformation/role/roleMaintain.js">
-                                    <a href="javascript:;">
-                                        <i class="fa fa-users"></i>角色管理</a>
-                                </li>
-                                <!--<li data-page="static/systemInformation/project/project" data-script="js/systemInformation/project/project.js">
-                                    <a href="javascript:;">
-                                        <i class="fa fa-institution"></i>项目管理</a>
-                                </li>-->
-                                <!--<li data-page="static/systemInformation/plugin/plugin" data-script="js/systemInformation/plugin/plugin.js">
-                                    <a href="javascript:;">
-                                        <i class="fa fa-file-archive-o"></i>插件管理</a>
-                                </li>-->
-
-                            </ul>
-                            <ul class="sidebar-menu metismenu" id="autoUIPage" style="display: none">
-
-                            </ul>
-                            <ul class="sidebar-menu metismenu" id="dataStatisticsPage" style="display: none">
-
-                            </ul>
-                            <ul class="sidebar-menu metismenu" id="dbTestPage" style="display: none">
-
-                            </ul>
-                        </nav>
-                    </div>
-                    <footer class="sidebar-footer">
-                        <ul class="sidebar-menu metismenu" id="customize-menu">
-                            <li>
-                                <ul>
-                                    <li class="customize">
-                                        <div class="customize-item">
-                                            <div class="row customize-header">
-                                                <div class="col-4"> </div>
-                                                <div class="col-4">
-                                                    <label class="title">固定</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label class="title">静态</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <label class="title">侧边栏:</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="sidebarPosition" value="">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <label class="title">头部:</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="headerPosition" value="">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <label class="title">尾部:</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label>
-                                                        <input class="radio" type="radio" name="footerPosition" value="">
-                                                        <span></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="customize-item">
-                                            <ul class="customize-colors">
-                                                <li>
-                                                    <span class="color-item color-red" data-theme="red"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="color-item color-orange" data-theme="orange"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="color-item color-green active" data-theme=""></span>
-                                                </li>
-                                                <li>
-                                                    <span class="color-item color-seagreen" data-theme="seagreen"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="color-item color-blue" data-theme="blue"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="color-item color-purple" data-theme="purple"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a href="javascript:;"><i class="fa fa-cog"></i> 定制 </a>
-                            </li>
-                        </ul>
-                    </footer>
-                </aside>
-                <div class="sidebar-overlay" id="sidebar-overlay"></div>
-                <div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
-                <div class="mobile-menu-handle"></div>
-                <article class="content dashboard-page" id="openPageBox">
-                    
-                </article>
-                <footer class="footer">
-                    <div class="footer-block">
-                        <p class="text-center">
-                            <small>Copyright © 2012-2017 自动化测试项目组 V1.0</small>
-                        </p>
-                    </div>
-                </footer>
-                <div class="modal fade" id="modal-media">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Media Library</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    <span class="sr-only">Close</span>
-                                </button>
                             </div>
-                            <div class="modal-body modal-tab-container">
-                                <ul class="nav nav-tabs modal-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#gallery" data-toggle="tab" role="tab">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#upload" data-toggle="tab" role="tab">Upload</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content modal-tab-content">
-                                    <div class="tab-pane fade" id="gallery" role="tabpanel">
-                                        <div class="images-container">
-                                            <div class="row"> </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade active in" id="upload" role="tabpanel">
-                                        <div class="upload-container">
-                                            <div id="dropzone">
-                                                <form action="/" method="POST" enctype="multipart/form-data" class="dropzone needsclick dz-clickable" id="demo-upload">
-                                                    <div class="dz-message-block">
-                                                        <div class="dz-message needsclick"> Drop files here or click to upload. </div>
-                                                    </div>
-                                                </form>
+                            <div class="tab-pane fade active in" id="upload" role="tabpanel">
+                                <div class="upload-container">
+                                    <div id="dropzone">
+                                        <form action="/" method="POST" enctype="multipart/form-data"
+                                              class="dropzone needsclick dz-clickable" id="demo-upload">
+                                            <div class="dz-message-block">
+                                                <div class="dz-message needsclick">Drop files here or
+                                                    click to upload.
+                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Insert Selected</button>
-                            </div>
                         </div>
-                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-dialog -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                                data-dismiss="modal">Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Insert
+                            Selected
+                        </button>
+                    </div>
                 </div>
-                
-                <!--个人信息弹框-->
-				<div id="userInfoBox" title="个人信息" class="displaynone">
-					<form class="m15">
-				        <div class="row row-sm stats-container">
-				            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
-				                <label class="control-label">姓名:</label>
-				                <input name="name" type="text" class="form-control col-10 boxed" readonly="readonly"  placeholder="" value="admin">
-				            </div>
-				            <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
-				                <label class="control-label">职称:</label>
-				                <input name="title" type="text" class="form-control col-10 boxed" readonly="readonly"  placeholder="" value="管理员">
-				            </div>
-				            <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
-				                <label class="control-label">角色:</label>
-				                <input name="role" type="text" class="form-control col-10 boxed" readonly="readonly"  placeholder="" value="管理员">
-				            </div>
-				            <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
-				                <label class="control-label">地址:</label>
-				                <input name="location" type="text" class="form-control col-10 boxed"  placeholder="请输入地址" value="广州">
-				            </div>
-				            <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
-				                <label class="control-label">用户名:</label>
-				                <input name="username" type="text" class="form-control col-10 boxed"  placeholder="请输入用户名" value="admin">
-				            </div>
-				            <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
-				                <label class="control-label">密码:</label>
-				                <input name="password" type="password" class="form-control col-10 boxed" placeholder="请输入密码">
-				            </div>
-				        </div>
-					</form>
-				</div>
+                <!-- /.modal-content -->
             </div>
+            <!-- /.modal-dialog -->
         </div>
-        <!-- Reference block for JS -->
-        <div class="ref" id="ref">
-            <div class="color-primary"></div>
-            <div class="chart">
-                <div class="color-primary"></div>
-                <div class="color-secondary"></div>
-            </div>
+
+        <!--个人信息弹框-->
+        <div id="userInfoBox" title="个人信息" class="displaynone">
+            <form class="m15">
+                <div class="row row-sm stats-container">
+                    <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                        <label class="control-label">姓名:</label> <input name="name"
+                                                                        type="text" class="form-control col-10 boxed"
+                                                                        readonly="readonly" placeholder=""
+                                                                        value="admin">
+                    </div>
+                    <div class="col-12 col-sm-6 stat-col" style="top: 16px;">
+                        <label class="control-label">职称:</label> <input name="title"
+                                                                        type="text" class="form-control col-10 boxed"
+                                                                        readonly="readonly" placeholder="" value="管理员">
+                    </div>
+                    <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
+                        <label class="control-label">角色:</label> <input name="role"
+                                                                        type="text" class="form-control col-10 boxed"
+                                                                        readonly="readonly" placeholder="" value="管理员">
+                    </div>
+                    <div class="col-12 col-sm-6 stat-col" style="top: 32px;">
+                        <label class="control-label">地址:</label> <input name="location"
+                                                                        type="text" class="form-control col-10 boxed"
+                                                                        placeholder="请输入地址" value="广州">
+                    </div>
+                    <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
+                        <label class="control-label">用户名:</label> <input name="username"
+                                                                         type="text" class="form-control col-10 boxed"
+                                                                         placeholder="请输入用户名" value="admin">
+                    </div>
+                    <div class="col-12 col-sm-6 stat-col" style="top: 48px;">
+                        <label class="control-label">密码:</label> <input name="password"
+                                                                        type="password"
+                                                                        class="form-control col-10 boxed"
+                                                                        placeholder="请输入密码">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div id="hideBox" style="display:none"></div>
-        
-	    <script src="lib/js/jquery.min.js"></script>
-	    <script src="lib/js/bootstrap.min.js"></script>
-	    <script src="js/vendor.js"></script>
-        <script src="js/app.js"></script> 
-        <script src="js/download.js"></script> 
+    </div>
+</div>
+<!-- Reference block for JS -->
+<div class="ref" id="ref">
+    <div class="color-primary"></div>
+    <div class="chart">
+        <div class="color-primary"></div>
+        <div class="color-secondary"></div>
+    </div>
+</div>
+<div id="hideBox" style="display: none"></div>
 
-        <script src="lib/ztree/jquery.ztree.all.min.js"></script>
-    	<script src="lib/ztree/jquery.ztree.exedit.js"></script>
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+<script src="js/download.js"></script>
 
-        <!--<script src="lib/jqGrid.5.1.1/grid.locale-cn.js"></script>-->
-        <script src="lib/jqGrid.5.3.2/js/i18n/grid.locale-cn.js"></script>
-        <!--<script src="lib/jqGrid.5.1.1/jquery.jqGrid.min.js"></script>-->
-        <script src="lib/jqGrid.5.3.2/js/jquery.jqGrid.min.js"></script>
-        <scripct src="lib/multiSelect/jquery.multi-select.js"></scripct>
-        <script src="lib/multiple-select/multiple-select.js"></script>
+<script src="lib/ztree/jquery.ztree.all.min.js"></script>
+<script src="lib/ztree/jquery.ztree.exedit.js"></script>
 
-	    <script src="lib/jqueryui/jquery-ui.min.js"></script>
-	    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
-		<script src="lib/select2/select2.min.js"></script>
-        <script type="text/javascript" src="lib/select2/dist/js/i18n/zh-CN.js"></script>
-        <script src="js/common.js"></script>
-        <script src="lib/ipInput/ipInput.min.js"></script>
-        <script src="lib/jquery-comfirm/jquery-comfirm.min.js"></script>
+<!--<script src="lib/jqGrid.5.1.1/grid.locale-cn.js"></script>-->
+<script src="lib/jqGrid.5.3.2/js/i18n/grid.locale-cn.js"></script>
+<!--<script src="lib/jqGrid.5.1.1/jquery.jqGrid.min.js"></script>-->
+<script src="lib/jqGrid.5.3.2/js/jquery.jqGrid.min.js"></script>
+<scripct src="lib/multiSelect/jquery.multi-select.js"></scripct>
+<script src="lib/multiple-select/multiple-select.js"></script>
 
-        <script src="lib/fileupload/vendor/jquery.ui.widget.js"></script>
-        <!-- The basic File Upload plugin -->
-        <script src="lib/fileupload/jquery.fileupload.js"></script>
-        <!-- The File Upload processing plugin -->
-        <script src="lib/fileupload/jquery.fileupload-process.js"></script>
-        <script src="lib/fileupload/jquery.fileupload-validate.js"></script>
-        <!-- echarts plugin -->
-        <script src="lib/echarts/echarts.js"></script>
-        <script src="lib/x2js-master/xml2json.min.js"></script>
-        <script src="lib/jquery-steps/jquery.steps.min.js"></script>
+<script src="lib/jqueryui/jquery-ui.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+<script src="lib/select2/select2.min.js"></script>
+<script type="text/javascript" src="lib/select2/dist/js/i18n/zh-CN.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/ipInput/ipInput.min.js"></script>
+<script src="lib/jquery-comfirm/jquery-comfirm.min.js"></script>
 
-        <script type="text/javascript" src="lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-        <script type="text/javascript" src="lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script src="lib/fileupload/vendor/jquery.ui.widget.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="lib/fileupload/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="lib/fileupload/jquery.fileupload-process.js"></script>
+<script src="lib/fileupload/jquery.fileupload-validate.js"></script>
+<!-- echarts plugin -->
+<script src="lib/echarts/echarts.js"></script>
+<script src="lib/x2js-master/xml2json.min.js"></script>
+<script src="lib/jquery-steps/jquery.steps.min.js"></script>
 
-        <script type="text/javascript" src="lib/gojs/release/go.js"></script>
+<script type="text/javascript"
+        src="lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"
+        charset="UTF-8"></script>
+<script type="text/javascript"
+        src="lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js"
+        charset="UTF-8"></script>
 
-    </body>
+<script type="text/javascript" src="lib/gojs/release/go.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        showPage("settingPage");
+        $("#headerMenu a").removeClass("active");
+    });
+    showPage("settingPage");
+</script>
+<script src="js/home.js"></script>
+</body>
 </html>

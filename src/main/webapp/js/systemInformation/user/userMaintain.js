@@ -4,8 +4,8 @@ $(document).ready(function () {
     $.jgrid.defaults.styleUI = 'Bootstrap';
     
     var userGrid;
-    var basicUrl="/microservice/baffle/user";
-    var roleUrl="/microservice/baffle/role";
+    var basicUrl="/json/user.json";
+    var roleUrl="/json/roleList.json";
     userGrid = $("#jqGridUser").jqGrid({
     	url:basicUrl,
     	editurl: 'clientArray',
@@ -32,7 +32,7 @@ $(document).ready(function () {
         autowidth: true,
     	pager:'jqGridPagerUser',
     	jsonReader: {
-            root: "data", //root这里的值是rows，意味着它会读取json中的rows键的值，这个值就是真实的数据
+            root: "rows", //root这里的值是rows，意味着它会读取json中的rows键的值，这个值就是真实的数据
             page: "page", //root这里的值是page，意味着它会读取json中的page键的值，当前页号
             total: "totalpages",//总的页数
             records: "total"//总记录数
@@ -150,7 +150,7 @@ $(document).ready(function () {
     		dataType:"json",
     		async: true,
     		success: function(data){
-    			data = data.data;
+    			data = data.rows;
     			$("select[name=role]").empty();
     			$("select[name=role]").append(' <option value="-1">请选择角色</option>');
     			if(data != null && data.length > 0){
